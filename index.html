@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Randonnées en montagne</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+
+var counter = 1;
+
+function startSlideshow(nb_pictures)
+{
+    var ss_cb = function() {
+        var im = document.getElementById('slideshow');
+        im.src = 'imagesweb/titre' + (counter+1) + '.jpg';
+        counter = (counter+1) % nb_pictures;
+        setTimeout(ss_cb, 4000);
+    };
+    setTimeout(ss_cb, 4000);
+}
+    </script>
+</head>
+
+<body onload="startSlideshow(4)">
+
+<div class="container">
+
+    <header>
+<h1>Randonnées en montagne</h1>
+
+<img id="slideshow" src="imagesweb/titre1.jpg" alt="pres">
+
+<ul class="nav">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="randoete.html">Rando été</a></li>
+    <li><a href="raquettes.html">Rando raquettes</a></li>
+    <li><a href="sejourautomneprintemps.html">Séjour Printemps Automne</a></li>
+    <li><a href="educenvironnement.html">Education par la nature</a></li>
+    <li><a href="islande.html">Voyage en Islande</a></li>
+    <li><a href="contact.html">Contact Caroline</a></li>
+    <li><a href="liens.html">Liens</a></li>
+</ul>
+</header>
+
+
+<p class="welcome">Bienvenue sur le site de Caroline, accompagnatrice en montagne
+dans le sud de l'Isère (Alpe du grand Serre).</p>
+
+<p>12 ans d'expérience dans l'encadrement en montagne, à votre service, pour réussir vos sorties.</p>
+
+<h2>Randonnées raquettes</h2>
+<p>Les beaux mois de neige sont presque là !</p>
+
+<p>Je vous propose des sorties en raquettes à neige pour débutants ainsi que
+pour des personnes sportives, en demi-journée, en journée, en séjour ou en nocturne.</p>
+
+<ul>
+    <li>prise de contact avec l'activité</li>
+    <li>découverte du milieu montagnard en hiver</li>
+    <li>Initiation et perfectionnement recherche DVA</li>
+    <li>Randonnée journée "altitude".</li>
+</ul>
+
+<p>Vous voulez vivre une semaine de dépaysement en montagne et vous êtes un groupe constitué ?
+Un séjour en raquettes, cela s'organise :
+les gîtes et refuges se réservent à l'avance pour
+"la haute saison" d'hiver, votre accompagnatrice aussi !</p>
+
+<!--<p>Programme de randonnées raquettes.</p>-->
+
+<div class="news">
+
+<h2>La fête de la raquette à neige</h2>
+
+<p> <span style="color: red;">DIMANCHE 19 JANVIER 2014</span> à l'Alpe du Grand Serre.</p>
+
+<p>Venez partager un moment convivial entre amis, en famille, avec vos collègues
+pour découvrir la randonnée hivernale en raquette à neige.</p>
+
+<ul>
+    <li>Chasse au trésor,</li>
+    <li>Atelier de recherche DVA,</li>
+    <li>Repas du terroir.</li>
+</ul>
+
+<p>Accompagnateurs, nous vous guiderons dans la montagne enneigée en toute sécurité.</p>
+
+</div>
+
+<!--Programme de la fête de la raquette.-->
+
+<footer>
+    <img src="imagesweb/raquette5.jpg">
+    <p class="credits">www.randonnees-montagnes.com 2011 Auteur C.de Beaucorps, Anne Cuzin</p>
+</footer>
+
+</div>
+
+</body>
+
+</html>
